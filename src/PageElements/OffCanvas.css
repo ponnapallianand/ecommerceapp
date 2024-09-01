@@ -1,0 +1,196 @@
+/* OffCanvas.css */
+
+/* General styles for the off-canvas menu */
+.offcanvas {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Hidden off-canvas */
+  width: 300px; /* Off-canvas width */
+  height: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-y: auto;
+  transition: left 0.5s ease, opacity 0.5s ease;
+  z-index: 1000;
+  opacity: 0;
+}
+
+.offcanvas.open {
+  left: 0; /* Slide in off-canvas */
+  opacity: 1; /* Fade in */
+}
+
+.offcanvas-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #444;
+  border-bottom: 1px solid #555;
+}
+
+.offcanvas-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.offcanvas-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Menu list styling */
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.menu-item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.menu-item a:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Sub-menu styles */
+.sub-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%; /* Position sub-menu to the right of the main item */
+  background-color: #444;
+  border-radius: 5px;
+  min-width: 200px; /* Width of the sub-menu */
+  z-index: 1100; /* Ensure it appears above other content */
+}
+
+.menu-item:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu-item a {
+  color: #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sub-menu-item a:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  z-index: 999;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Adjust body content when off-canvas is open */
+.body-content {
+  transition: transform 0.5s ease, width 0.5s ease;
+  max-width: 100%; /* Adjust to control how much space body content takes */
+  margin: 0 auto; /* Center body content horizontally */
+  padding: 20px;
+  position: relative;
+}
+
+.body-content.shifted {
+  transform: translateX(50px); /* Shift the content horizontally by the width of the off-canvas menu */
+}
+
+/* Tab Container for 5 items in a row */
+.tab-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+  gap: 30px; /* Space between tabs */
+  margin-top: 30px; /* Space above the tabs, customizable */
+}
+
+.tab-item {
+  flex: 1 0 calc((100% / 5) - 30px); /* Each tab takes up 1/5th width minus the gap */
+  max-width: calc((100% / 5) - 30px);
+  box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+/* Styling for tab items */
+.tab-item a {
+  display: block;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-item a:hover {
+  background-color: #0056b3;
+}
+
+.offcanvas-toggle {
+  position: fixed;
+  top: 6px;
+  left: -15px; /* Positioned to the left of the screen */
+  transform: translateY(-3%);
+  width: 55px; /* Set width for the circular shape */
+  height: 55px; /* Set height for the circular shape */
+  background-color: #ffffff00; /* Transparent background */
+  color: #444; /* Icon color */
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  text-align: center;
+  line-height: 55px; /* Center icon vertically */
+  border-radius: 50%; /* Circular shape */
+  z-index: 1100;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+}
+
+.offcanvas-toggle:hover {
+  background-color: #d4dfe900; /* Change to a more visible color if needed */
+  color: rgb(255, 255, 255); /* Icon color on hover */
+}

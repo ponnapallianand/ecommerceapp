@@ -1,0 +1,154 @@
+/* Global box-sizing to avoid overflow issues */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Custom properties for easy modification */
+:root {
+  --thumbnail-width: 100%;
+  --thumbnail-hover-scale: 1.2;
+  --card-border-color: #ddd;
+  --card-border-radius: 10px;
+  --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --card-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.2);
+  --card-hover-scale: 1.05;
+  --card-background-color: #fff;
+  --card-text-color: #333;
+  --card-link-color: #007bff;
+  --card-link-hover-color: #0056b3;
+  --card-link-underline-color: #007bff;
+}
+
+/* Card container styling */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjusted gap between cards */
+  justify-content: center; /* Center the cards within the container */
+  padding: 0 10px; /* Add padding to ensure cards don't touch edges */
+}
+
+/* Card styling */
+.card {
+  flex: 1 1 calc(22% - 200px); /* Adjusted width for consistent spacing */
+  max-width: calc(22% - 200px); /* Adjusted max-width for consistent spacing */
+  min-width: 150px; /* Ensure a minimum width for cards */
+  border: 1px solid var(--card-border-color);
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  background-color: var(--card-background-color);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: scale(var(--card-hover-scale));
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* Thumbnail styling */
+.thumbnail {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.thumbnail img {
+  width: var(--thumbnail-width);
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Thumbnail hover effect */
+.thumbnail img:hover {
+  transform: scale(var(--thumbnail-hover-scale));
+}
+
+/* Card content */
+.card-content {
+  padding: 20px;
+}
+
+.card-category {
+  color: var(--card-link-color);
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.card-date {
+  color: #6c757d;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #d30000;
+  font-size: 1.1rem;
+}
+
+.card-text {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: var(--card-text-color);
+}
+
+.card-link {
+  color: var(--card-link-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Card link hover effect */
+.card-link:hover {
+  color: var(--card-link-hover-color);
+  text-decoration: underline;
+}
+
+/* Card link hover underline effect */
+.card-link:after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: var(--card-link-underline-color);
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+.card-link:hover:after {
+  width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .card {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* Image popup styling */
+.image-popup {
+  position: fixed;
+  z-index: 1000;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-popup img {
+  width: 200px; /* Adjust the size as needed */
+  height: auto;
+}

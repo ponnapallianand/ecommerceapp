@@ -1,0 +1,104 @@
+/* Container for the entire slider */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Slider styles */
+.slider {
+  display: flex;
+  flex-direction: column;
+  height: 200%; /* Enough height to accommodate all images */
+  animation: scrollUp 10s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* Individual slide styles */
+.slide {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}
+
+/* Navigation styles (fixed to stay visible) */
+.navigation {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.nav-button {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.nav-button.active {
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .nav-button {
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+  }
+}
+
+/* Tabs styles */
+.tab-container {
+  position: fixed; /* Fixed to keep it in view */
+  top: 10px; /* Adjust position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of tabs */
+  gap: 30px;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.tab-item {
+  flex: 1 0 calc((100% / 5) - 30px); /* Each tab takes up 1/5th width minus the gap */
+  max-width: calc((100% / 5) - 30px);
+  box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+.tab-item a {
+  display: block;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-item a:hover {
+  background-color: #0056b3;
+}
