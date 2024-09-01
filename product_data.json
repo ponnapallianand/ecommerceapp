@@ -1,0 +1,268 @@
+[
+    {
+        "id": 1,
+        "name": "Wireless Headphones",
+        "description": "High-quality wireless headphones with noise cancellation and long battery life.",
+        "category": "Electronics",
+        "price": 99.99,
+        "imageUrl": "https://avstore.in/cdn/shop/files/1.AVStore-Bose-QuietComfort-45-Noise-Front-View-Hero.jpg?v=1685695623",
+        "productUrl": "",
+        "rating": 4.5,
+        "stock": 25
+    },
+    {
+        "id": 2,
+        "name": "Smartwatch",
+        "description": "Advanced smartwatch with fitness tracking, heart rate monitoring, and GPS.",
+        "category": "Wearables",
+        "price": 149.99,
+        "imageUrl": "https://www.aviationkart.com/cdn/shop/products/Sc0f9d788987f4bc69b44c1f9e5582ce22_2048x.jpg?v=1691223409",
+        "productUrl": "",
+        "rating": 4.7,
+        "stock": 50
+    },
+    {
+        "id": 3,
+        "name": "Bluetooth Speaker",
+        "description": "Portable Bluetooth speaker with deep bass and waterproof design.",
+        "category": "Audio",
+        "price": 79.99,
+        "imageUrl": "https://rukminim2.flixcart.com/image/850/1000/xif0q/speaker/u/q/i/-original-imagsbtckq3njtb2.jpeg?q=90&crop=false",
+        "productUrl": "",
+        "rating": 4.3,
+        "stock": 15
+    },
+    {
+        "id": 4,
+        "name": "Running Shoes",
+        "description": "Lightweight running shoes with excellent grip and comfort.",
+        "category": "Footwear",
+        "price": 59.99,
+        "imageUrl": "https://www.verywellfit.com/thmb/3kIfNjrvzQJRWEInF0zcPhkON5s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/vwt-product-brooks-launch-10-jjuliao-14574-2716edc585704872b8cf3680187422cb.jpeg",
+        "productUrl": "",
+        "rating": 4.2,
+        "stock": 30
+    },
+    {
+        "id": 5,
+        "name": "Digital Camera",
+        "description": "High-resolution digital camera with 4K video recording and zoom lens.",
+        "category": "Photography",
+        "price": 299.99,
+        "imageUrl": "https://m.media-amazon.com/images/I/51GdCehn0iL._SL1500_.jpg",
+        "productUrl": "",
+        "rating": 4.6,
+        "stock": 10
+    },
+    {
+        "id": 6,
+        "name": "TV",
+        "description": "High-resolution tv with 4K video recording and zoom lens.",
+        "category": "Movies HD",
+        "price": 299.99,
+        "imageUrl": "https://btech.com/media/catalog/product/s/k/skyline-32-inch-hd-led-tv-3227_1_11zon.jpg?width=697&store=en&image-type=image",
+        "productUrl": "",
+        "rating": 4.6,
+        "stock": 10
+    },
+
+    {
+        "id": 7,
+        "name": "Wireless Headphones",
+        "description": "High-quality wireless headphones with noise cancellation and long battery life.",
+        "category": "Electronics",
+        "price": 99.99,
+        "imageUrl": "https://avstore.in/cdn/shop/files/1.AVStore-Bose-QuietComfort-45-Noise-Front-View-Hero.jpg?v=1685695623",
+        "productUrl": "",
+        "rating": 4.5,
+        "stock": 25
+    },
+    {
+        "id": 8,
+        "name": "Smartwatch",
+        "description": "Advanced smartwatch with fitness tracking, heart rate monitoring, and GPS.",
+        "category": "Wearables",
+        "price": 149.99,
+        "imageUrl": "https://www.aviationkart.com/cdn/shop/products/Sc0f9d788987f4bc69b44c1f9e5582ce22_2048x.jpg?v=1691223409",
+        "productUrl": "",
+        "rating": 4.7,
+        "stock": 50
+    },
+    {
+        "id": 9,
+        "name": "Bluetooth Speaker",
+        "description": "Portable Bluetooth speaker with deep bass and waterproof design.",
+        "category": "Audio",
+        "price": 79.99,
+        "imageUrl": "https://rukminim2.flixcart.com/image/850/1000/xif0q/speaker/u/q/i/-original-imagsbtckq3njtb2.jpeg?q=90&crop=false",
+        "productUrl": "",
+        "rating": 4.3,
+        "stock": 15
+    },
+    {
+        "id": 10,
+        "name": "Running Shoes",
+        "description": "Lightweight running shoes with excellent grip and comfort.",
+        "category": "Footwear",
+        "price": 59.99,
+        "imageUrl": "https://www.verywellfit.com/thmb/3kIfNjrvzQJRWEInF0zcPhkON5s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/vwt-product-brooks-launch-10-jjuliao-14574-2716edc585704872b8cf3680187422cb.jpeg",
+        "productUrl": "",
+        "rating": 4.2,
+        "stock": 30
+    },
+    {
+        "id": 11,
+        "name": "Digital Camera",
+        "description": "High-resolution digital camera with 4K video recording and zoom lens.",
+        "category": "Photography",
+        "price": 299.99,
+        "imageUrl": "https://m.media-amazon.com/images/I/51GdCehn0iL._SL1500_.jpg",
+        "productUrl": "",
+        "rating": 4.6,
+        "stock": 10
+    },
+    {
+        "id": 12,
+        "name": "TV",
+        "description": "High-resolution tv with 4K video recording and zoom lens.",
+        "category": "Movies HD",
+        "price": 299.99,
+        "imageUrl": "https://btech.com/media/catalog/product/s/k/skyline-32-inch-hd-led-tv-3227_1_11zon.jpg?width=697&store=en&image-type=image",
+        "productUrl": "",
+        "rating": 4.6,
+        "stock": 10
+    },
+    {
+        "id": 13,
+        "name": "Wireless Headphones",
+        "description": "High-quality wireless headphones with noise cancellation and long battery life.",
+        "category": "Electronics",
+        "price": 99.99,
+        "imageUrl": "https://avstore.in/cdn/shop/files/1.AVStore-Bose-QuietComfort-45-Noise-Front-View-Hero.jpg?v=1685695623",
+        "productUrl": "",
+        "rating": 4.5,
+        "stock": 25
+    },
+    {
+        "id": 14,
+        "name": "Smartwatch",
+        "description": "Advanced smartwatch with fitness tracking, heart rate monitoring, and GPS.",
+        "category": "Wearables",
+        "price": 149.99,
+        "imageUrl": "https://www.aviationkart.com/cdn/shop/products/Sc0f9d788987f4bc69b44c1f9e5582ce22_2048x.jpg?v=1691223409",
+        "productUrl": "",
+        "rating": 4.7,
+        "stock": 50
+    },
+    {
+        "id": 15,
+        "name": "Bluetooth Speaker",
+        "description": "Portable Bluetooth speaker with deep bass and waterproof design.",
+        "category": "Audio",
+        "price": 79.99,
+        "imageUrl": "https://rukminim2.flixcart.com/image/850/1000/xif0q/speaker/u/q/i/-original-imagsbtckq3njtb2.jpeg?q=90&crop=false",
+        "productUrl": "",
+        "rating": 4.3,
+        "stock": 15
+    },
+    {
+        "id": 16,
+        "name": "Running Shoes",
+        "description": "Lightweight running shoes with excellent grip and comfort.",
+        "category": "Footwear",
+        "price": 59.99,
+        "imageUrl": "https://www.verywellfit.com/thmb/3kIfNjrvzQJRWEInF0zcPhkON5s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/vwt-product-brooks-launch-10-jjuliao-14574-2716edc585704872b8cf3680187422cb.jpeg",
+        "productUrl": "",
+        "rating": 4.2,
+        "stock": 30
+    },
+    {
+        "id": 17,
+        "name": "Digital Camera",
+        "description": "High-resolution digital camera with 4K video recording and zoom lens.",
+        "category": "Photography",
+        "price": 299.99,
+        "imageUrl": "https://m.media-amazon.com/images/I/51GdCehn0iL._SL1500_.jpg",
+        "productUrl": "",
+        "rating": 4.6,
+        "stock": 10
+    },
+    {
+        "id": 18,
+        "name": "TV",
+        "description": "High-resolution tv with 4K video recording and zoom lens.",
+        "category": "Movies HD",
+        "price": 299.99,
+        "imageUrl": "https://btech.com/media/catalog/product/s/k/skyline-32-inch-hd-led-tv-3227_1_11zon.jpg?width=697&store=en&image-type=image",
+        "productUrl": "",
+        "rating": 4.6,
+        "stock": 10
+    },
+    {
+        "id": 19,
+        "name": "Wireless Headphones",
+        "description": "High-quality wireless headphones with noise cancellation and long battery life.",
+        "category": "Electronics",
+        "price": 99.99,
+        "imageUrl": "https://avstore.in/cdn/shop/files/1.AVStore-Bose-QuietComfort-45-Noise-Front-View-Hero.jpg?v=1685695623",
+        "productUrl": "",
+        "rating": 4.5,
+        "stock": 25
+    },
+    {
+        "id": 20,
+        "name": "Smartwatch",
+        "description": "Advanced smartwatch with fitness tracking, heart rate monitoring, and GPS.",
+        "category": "Wearables",
+        "price": 149.99,
+        "imageUrl": "https://www.aviationkart.com/cdn/shop/products/Sc0f9d788987f4bc69b44c1f9e5582ce22_2048x.jpg?v=1691223409",
+        "productUrl": "",
+        "rating": 4.7,
+        "stock": 50
+    },
+    {
+        "id": 21,
+        "name": "Bluetooth Speaker",
+        "description": "Portable Bluetooth speaker with deep bass and waterproof design.",
+        "category": "Audio",
+        "price": 79.99,
+        "imageUrl": "https://rukminim2.flixcart.com/image/850/1000/xif0q/speaker/u/q/i/-original-imagsbtckq3njtb2.jpeg?q=90&crop=false",
+        "productUrl": "",
+        "rating": 4.3,
+        "stock": 15
+    },
+    {
+        "id": 22,
+        "name": "Running Shoes",
+        "description": "Lightweight running shoes with excellent grip and comfort.",
+        "category": "Footwear",
+        "price": 59.99,
+        "imageUrl": "https://www.verywellfit.com/thmb/3kIfNjrvzQJRWEInF0zcPhkON5s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/vwt-product-brooks-launch-10-jjuliao-14574-2716edc585704872b8cf3680187422cb.jpeg",
+        "productUrl": "",
+        "rating": 4.2,
+        "stock": 30
+    },
+    {
+        "id": 23,
+        "name": "Digital Camera",
+        "description": "High-resolution digital camera with 4K video recording and zoom lens.",
+        "category": "Photography",
+        "price": 299.99,
+        "imageUrl": "https://m.media-amazon.com/images/I/51GdCehn0iL._SL1500_.jpg",
+        "productUrl": "",
+        "rating": 4.6,
+        "stock": 10
+    },
+    {
+        "id": 24,
+        "name": "TV",
+        "description": "High-resolution tv with 4K video recording and zoom lens.",
+        "category": "Movies HD",
+        "price": 299.99,
+        "imageUrl": "https://btech.com/media/catalog/product/s/k/skyline-32-inch-hd-led-tv-3227_1_11zon.jpg?width=697&store=en&image-type=image",
+        "productUrl": "",
+        "rating": 4.6,
+        "stock": 10
+    }
+
+]
